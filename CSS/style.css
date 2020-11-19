@@ -199,19 +199,17 @@
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 28px 15px 145px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     z-index: 1;
 }
 
+.header-top-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-logo {
     display: block;
-    width: 15.299%;
-    height: 41px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -226,9 +224,61 @@
 }
 
 .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     box-sizing: border-box;
     font-size: 13px;
 }
+
+
+/* Бургер-меню */
+
+.menu-button {
+    width: 1.769em;
+    height: 1.461em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    font-size: inherit;
+    text-indent: -9999px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.menu-button::before,
+.menu-button::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
+.menu-button::before {
+    top: 0;
+}
+
+.menu-button::after {
+    bottom: 0;
+}
+
+.menu-button-lable {
+    width: 100%;
+    height: 3px;
+    margin-top: -0.1em;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+
+/*________________________________________________________*/
 
 .menu-list {
     list-style: none;
@@ -256,22 +306,13 @@
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    margin: 125px auto 0;
     font-weight: bold;
-    font-size: 45px;
-    line-height: 75px;
     text-align: center;
-}
-
-.trends {
-    margin-top: 60px;
-    padding-bottom: 64px;
 }
 
 .section-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
     color: #0f0d0e;
     text-align: center;
     position: relative;
@@ -292,26 +333,23 @@
 }
 
 .trends-cards {
-    margin-top: 42px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .trend-card {
-    width: 24.8%;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     background-color: #000000;
-    flex: 1;
-    padding: 157px 22px 16px 18px;
     display: flex;
     flex-direction: column-reverse;
-}
-
-.trend-card:nth-child(n+2) {
-    margin-left: 0.24%;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
 }
 
 .trend-card::after {
@@ -381,8 +419,6 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: 24px;
-    font-size: 20px;
     margin-top: 15px;
 }
 
@@ -398,7 +434,6 @@
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -406,29 +441,23 @@
 
 .articles {
     box-sizing: border-box;
-    width: 66.239%;
-    margin-right: 10.256%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .article {
     display: flex;
-}
-
-.article:nth-child(n+2) {
-    margin-top: 60px;
+    justify-content: space-between;
 }
 
 .article-image-box {
-    width: 49.161%;
-    margin-right: 3.87%;
-    flex: none;
+    background-color: #eff6f1;
 }
 
 .article-image {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .article-header {
@@ -440,21 +469,19 @@
 }
 
 .article-information {
-    margin-bottom: 52px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    font-size: 12px;
 }
 
 .article-date {
-    font-size: 12px;
     color: #888888;
 }
 
 .article-author {
     margin-left: 1.25em;
     font-weight: bold;
-    font-size: 12px;
     color: #000000;
 }
 
@@ -462,10 +489,6 @@
     line-height: 22px;
     font-size: 15px;
     color: #0f0d0e;
-}
-
-.sidebar {
-    width: 23.076%;
 }
 
 .new-articles {
@@ -847,4 +870,126 @@
     font-weight: bold;
     font-size: 14px;
     color: #999999;
+}
+
+@media (min-width: 1200px) {
+    .header-box {
+        padding: 28px 15px 145px;
+    }
+    .header-logo {
+        width: 182px;
+        height: 41px;
+    }
+    .menu-button {
+        display: none;
+    }
+    .welcome-title {
+        margin: 125px auto 0;
+        font-size: 45px;
+        line-height: 75px;
+    }
+    .trends {
+        margin-top: 60px;
+        margin-bottom: 64px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .trends-cards {
+        margin-top: 42px;
+    }
+    .trend-card {
+        width: calc(25% - 1.5px);
+        padding-top: 133px;
+    }
+    .card-title>a {
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .content {
+        padding: 0 15px;
+    }
+    .articles {
+        width: 65.213%;
+    }
+    .article:nth-child(n+2) {
+        margin-top: 60px;
+    }
+    .article-image-box {
+        width: 49.934%;
+    }
+    .article-text-box {
+        width: 45.871%;
+    }
+    .article-information {
+        margin-bottom: 52px;
+    }
+    .sidebar {
+        width: 23.333%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header-box {
+        padding: 43px 35px 125px;
+    }
+    .header-logo {
+        width: 158px;
+        height: 36px;
+    }
+    .menu-list {
+        display: none;
+    }
+    .welcome-title {
+        margin: 104px auto 0;
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .trends {
+        margin: 50px 0;
+    }
+    .section-title {
+        font-size: 18px;
+    }
+    .trends-cards {
+        margin-top: 32px;
+    }
+    .trend-card {
+        width: calc(50% - 1px);
+        padding-top: 74px;
+    }
+    .trend-card:nth-child(n+3) {
+        margin-top: 2px;
+    }
+    .card-title>a {
+        line-height: 22px;
+        font-size: 17px;
+    }
+    .content {
+        padding: 0 35px;
+    }
+    .articles {
+        width: 56.16%;
+    }
+    .article {
+        flex-wrap: wrap;
+    }
+    .article:nth-child(n+2) {
+        padding-top: 42px;
+        border-top: 1px solid #eeeeee;
+        margin-top: 19px;
+    }
+    .article-image-box {
+        width: 100%;
+    }
+    .article-text-box {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .article-information {
+        margin-bottom: 34px;
+    }
+    .sidebar {
+        width: 39.111%;
+    }
 }
