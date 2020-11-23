@@ -166,7 +166,6 @@
 }
 
 .header {
-    background-image: url("../Images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -315,7 +314,7 @@
     content: "";
     position: absolute;
     margin: 0 auto;
-    top: 33px;
+    top: 30px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -323,12 +322,6 @@
     opacity: 0.4;
     height: 3px;
     width: 66px;
-}
-
-.trends-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .trend-card {
@@ -340,9 +333,7 @@
     background-color: #000000;
     display: flex;
     flex-direction: column-reverse;
-    padding-right: 20px;
     padding-bottom: 15px;
-    padding-left: 20px;
 }
 
 .trend-card::after {
@@ -374,7 +365,6 @@
 
 .trend {
     box-sizing: border-box;
-    padding: 42px 100px 35px 36px;
     border: 3px solid rgba(143, 127, 81, 0.6);
     position: relative;
     z-index: 1;
@@ -426,16 +416,10 @@
 .content {
     box-sizing: border-box;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .articles {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .article-image-box {
@@ -479,10 +463,8 @@
 }
 
 .sidebar-title {
-    margin-bottom: 45px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
     color: #0f0d0e;
     text-align: center;
     position: relative;
@@ -499,7 +481,7 @@
     background-color: #b59f5b;
     opacity: 0.4;
     height: 3px;
-    width: 4.714em;
+    width: 66px;
 }
 
 .new-articles {
@@ -608,12 +590,6 @@
     position: absolute;
 }
 
-.email-box,
-.tags,
-.themes {
-    margin-top: 60px;
-}
-
 .email-field-label {
     width: 1px;
     height: 1px;
@@ -646,7 +622,7 @@
 .tag-box {
     display: inline-block;
     border: 3px solid #eeeeee;
-    padding: 7px 14px;
+    padding: 7px 13px;
     margin-bottom: 6px;
 }
 
@@ -695,15 +671,11 @@
 
 .product-box {
     display: flex;
-    justify-content: space-between;
 }
 
 .product-card {
     box-sizing: border-box;
-    width: 29.914%;
-    flex: none;
     position: relative;
-    display: flex;
 }
 
 .product-image {
@@ -792,13 +764,12 @@
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 30px 0;
     list-style: none;
 }
 
 .social-box:nth-child(n+2) {
-    margin-left: 2.564%;
+    margin-left: 28px;
 }
 
 .social {
@@ -874,6 +845,9 @@
         width: 18px;
         height: 18px;
     }
+    .header {
+        background-image: url("../Images/banner-bg.jpg");
+    }
     .header-box {
         max-width: 1200px;
         padding: 28px 15px 145px;
@@ -897,17 +871,28 @@
         font-size: 20px;
     }
     .trends-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 42px;
     }
     .trend-card {
         width: calc(25% - 1.5px);
         padding-top: 133px;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .trend {
+        padding: 40px 36px 32px;
     }
     .card-title>a {
         line-height: 24px;
         font-size: 20px;
     }
     .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         max-width: 1200px;
         margin-top: 64px;
         padding: 0 15px;
@@ -918,6 +903,9 @@
     }
     .articles {
         width: 65.213%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .article:nth-child(n+2) {
         margin-top: 60px;
@@ -934,11 +922,30 @@
     .sidebar {
         width: 23.333%;
     }
+    .sidebar-title {
+        margin-bottom: 45px;
+        font-size: 14px;
+    }
+    .email-box,
+    .tags,
+    .themes {
+        margin-top: 60px;
+    }
     .product {
         margin-top: 64px;
     }
     .product-box {
+        justify-content: space-between;
         margin-top: 215px;
+    }
+    .product-card {
+        width: 29.914%;
+        flex: none;
+        display: flex;
+    }
+    .product-image {
+        height: 200px;
+        top: -172px;
     }
     .footer {
         max-width: 1200px;
@@ -968,8 +975,11 @@
         width: 28px;
         height: 28px;
     }
+    .header {
+        background-image: url("../Images/banner-bg-tablet.jpg");
+    }
     .header-box {
-        max-width: 641px;
+        max-width: 768px;
         padding: 43px 35px 125px;
     }
     .header-logo {
@@ -991,21 +1001,32 @@
         font-size: 18px;
     }
     .trends-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 32px;
     }
     .trend-card {
         width: calc(50% - 1px);
         padding-top: 74px;
+        padding-right: 18px;
+        padding-left: 18px;
     }
     .trend-card:nth-child(n+3) {
         margin-top: 2px;
+    }
+    .trend {
+        padding: 35px 30px 30px;
     }
     .card-title>a {
         line-height: 22px;
         font-size: 17px;
     }
     .content {
-        max-width: 641px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 768px;
         margin-top: 50px;
         padding: 0 35px;
     }
@@ -1017,39 +1038,158 @@
         border-top: 1px solid #eeeeee;
         margin-top: 19px;
     }
-    .article-image-box {
-        width: 100%;
-    }
     .article-text-box {
-        width: 100%;
         margin-top: 16px;
     }
     .article-information {
-        margin-bottom: 34px;
+        margin-bottom: 30px;
     }
     .sidebar {
         width: 39.111%;
+    }
+    .sidebar-title {
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .email-box,
+    .tags,
+    .themes {
+        margin-top: 60px;
     }
     .product {
         margin-top: 70px;
     }
     .product-box {
-        margin-top: 235px;
+        justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 235px;
     }
     .product-card {
+        flex: none;
+        display: flex;
         width: calc(50% - 12px);
     }
     .product-card:nth-child(n+3) {
         margin-top: 215px;
     }
+    .product-image {
+        height: 225px;
+        top: -195px;
+    }
     .footer {
-        max-width: 641px;
+        max-width: 768px;
         margin-top: 50px;
         padding-right: 35px;
         padding-left: 35px;
     }
     .copyright {
         margin-top: 50px;
+    }
+}
+
+@media(max-width: 640px) {
+    .header {
+        background-image: url("../Images/banner-mobile.jpg");
+    }
+    .header-box {
+        max-width: 360px;
+        padding: 32px 15px 220px;
+    }
+    .header-top-panel {
+        flex-direction: column;
+    }
+    .header-logo {
+        align-self: center;
+        order: 1;
+        width: 269px;
+        height: 61px;
+        margin-top: 175px;
+    }
+    .menu-list {
+        display: none;
+    }
+    .welcome-title {
+        margin-top: 42px;
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .trends {
+        margin-top: 40px;
+    }
+    .section-title {
+        font-size: 16px;
+    }
+    .trends-cards {
+        margin-top: 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .trend-card {
+        width: 100%;
+        padding-top: 65px;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .trend-card:nth-child(n+2) {
+        margin-top: 2px;
+    }
+    .trend {
+        padding: 32px 20px 25px;
+    }
+    .card-title>a {
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .content {
+        max-width: 360px;
+        margin-top: 45px;
+        padding: 0 15px;
+    }
+    .article {
+        padding-bottom: 22px;
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 35px;
+    }
+    .article-text-box {
+        margin-top: 16px;
+    }
+    .article-information {
+        margin-bottom: 20px;
+    }
+    .new-articles {
+        margin-top: 45px;
+    }
+    .sidebar-title {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    .email-box,
+    .tags,
+    .themes {
+        margin-top: 45px;
+    }
+    .product {
+        margin-top: 44px;
+    }
+    .product-box {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .product-card:nth-child(n+2) {
+        margin-top: 277px;
+    }
+    .product-image {
+        height: 285px;
+        top: -255px;
+    }
+    .footer {
+        max-width: 360px;
+        margin-top: 44px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .copyright {
+        margin-top: 48px;
     }
 }
