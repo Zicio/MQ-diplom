@@ -690,6 +690,7 @@ body {
 .product-img {
     display: block;
     max-width: 100%;
+    height: inherit;
 }
 
 .product-text-box {
