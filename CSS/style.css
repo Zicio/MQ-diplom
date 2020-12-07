@@ -673,20 +673,21 @@ body {
 }
 
 .product-box {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     margin-top: 41px;
+    padding: 0 23px;
 }
 
 .product-card {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-image {
-    display: block;
     background-color: #eff6f1;
-    margin: 0 auto;
-    width: 85.714%;
 }
 
 .product-img {
@@ -696,9 +697,8 @@ body {
 
 .product-text-box {
     box-sizing: border-box;
-    padding: 58px 25px 30px;
     outline: 3px solid rgba(143, 127, 81, 0.6);
-    transform: translateY(-30px);
+    outline-offset: 20px;
 }
 
 .product-title>a {
@@ -747,6 +747,10 @@ body {
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.product-button:hover {
+    background-color: #323232;
 }
 
 .footer {
@@ -846,12 +850,15 @@ body {
         font-size: 14px;
     }
     .new-article-image-box {
-        width: 25.641%;
+        width: 26.641%;
     }
     .email-box,
     .tags,
     .themes {
         margin-top: 60px;
+    }
+    .product-text-box {
+        flex: 1;
     }
 }
 
@@ -985,11 +992,11 @@ body {
         margin-top: 64px;
     }
     .product-card {
-        width: 29.914%;
+        width: 26.69%;
     }
     .footer {
         max-width: 1200px;
-        margin-top: 64px;
+        margin-top: 90px;
         padding-bottom: 43px;
     }
     .copyright {
@@ -1082,14 +1089,14 @@ body {
         flex-wrap: wrap;
     }
     .product-card {
-        width: calc(50% - 12px);
+        width: calc(50% - 34px);
     }
     .product-card:nth-child(n+3) {
-        margin-top: 25px;
+        margin-top: 55px;
     }
     .footer {
         max-width: 640px;
-        margin-top: 50px;
+        margin-top: 80px;
         padding-right: 35px;
         padding-left: 35px;
         padding-bottom: 36px;
@@ -1209,11 +1216,11 @@ body {
         flex-direction: column;
     }
     .product-card:nth-child(n+2) {
-        margin-top: 25px;
+        margin-top: 50px;
     }
     .footer {
         max-width: 320px;
-        margin-top: 44px;
+        margin-top: 70px;
         padding-bottom: 46px;
     }
     .copyright {
