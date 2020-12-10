@@ -20,6 +20,7 @@
 
 body {
     min-width: 320px;
+    --primary-color: #b59f5b;
 }
 
 .popup {
@@ -79,7 +80,7 @@ body {
 }
 
 .select:focus {
-    border: 1px solid #b59f5b;
+    border: 1px solid var(--primary-color);
 }
 
 .radio {
@@ -125,7 +126,7 @@ body {
 }
 
 .textarea:focus {
-    border: 1px solid #b59f5b;
+    border: 1px solid var(--primary-color);
 }
 
 .button-submit {
@@ -135,7 +136,7 @@ body {
     margin-top: 25px;
     border: none;
     cursor: pointer;
-    background-color: #b59f5b;
+    background-color: var(--primary-color);
     font-weight: bold;
     font-size: 14px;
     color: #ffffff;
@@ -296,7 +297,6 @@ body {
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    font-weight: bold;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -304,7 +304,6 @@ body {
 
 .section-title {
     text-transform: uppercase;
-    font-weight: bold;
     color: #0f0d0e;
     text-align: center;
     position: relative;
@@ -318,7 +317,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #b59f5b;
+    background-color: var(--primary-color);
     opacity: 0.4;
     height: 3px;
     width: 66px;
@@ -396,7 +395,7 @@ body {
 .card-tag>a {
     font-weight: bold;
     text-decoration: none;
-    color: #b59f5b;
+    color: var(--primary-color);
 }
 
 .card-tag>a:hover {
@@ -407,12 +406,11 @@ body {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
     margin-top: 15px;
 }
 
 .card-title>a:hover {
-    color: #b59f5b;
+    color: var(--primary-color);
 }
 
 .trend-title>a {
@@ -466,7 +464,6 @@ body {
 
 .sidebar-title {
     text-transform: uppercase;
-    font-weight: bold;
     color: #0f0d0e;
     text-align: center;
     position: relative;
@@ -481,7 +478,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #b59f5b;
+    background-color: var(--primary-color);
     opacity: 0.4;
     height: 3px;
     width: 66px;
@@ -525,11 +522,10 @@ body {
     color: #0f0d0e;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: bold;
 }
 
 .new-article-title:hover {
-    color: #b59f5b;
+    color: var(--primary-color);
 }
 
 .search-box {
@@ -567,7 +563,7 @@ body {
 }
 
 .search-field:focus {
-    outline: 1px solid #b59f5b;
+    outline: 1px solid var(--primary-color);
 }
 
 .search-button {
@@ -575,7 +571,7 @@ body {
     display: block;
     border: none;
     cursor: pointer;
-    background-color: #b59f5b;
+    background-color: var(--primary-color);
     background-image: url("../SVG/search.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -612,7 +608,7 @@ body {
 }
 
 .email-field:focus {
-    outline: 1px solid #b59f5b;
+    outline: 1px solid var(--primary-color);
 }
 
 .tags-list {
@@ -630,7 +626,7 @@ body {
 }
 
 .tag-box:hover {
-    border: 3px solid #b59f5b;
+    border: 3px solid var(--primary-color);
 }
 
 .tag {
@@ -662,14 +658,14 @@ body {
 }
 
 .theme:hover {
-    color: #b59f5b;
+    color: var(--primary-color);
 }
 
 .number-articles-of-theme {
     vertical-align: super;
     font-weight: bold;
     font-size: 12px;
-    color: #b59f5b;
+    color: var(--primary-color);
 }
 
 .product-box {
@@ -707,7 +703,7 @@ body {
 }
 
 .product-content>a {
-    color: #b59f5b;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -742,7 +738,7 @@ body {
     width: 47.457%;
     height: 48px;
     cursor: pointer;
-    background-color: #b59f5b;
+    background-color: var(--primary-color);
     font-weight: bold;
     font-size: 14px;
     color: #ffffff;
